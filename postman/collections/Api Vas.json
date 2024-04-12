@@ -1,0 +1,4425 @@
+{
+	"info": {
+		"_postman_id": "7f3fd2ba-2e59-491c-ab93-e93f007bf5aa",
+		"name": "Api Vas",
+		"description": "API Rest para uso exclusivo del aplicativo Vas. <br />\n         <br />\n         Links: [JSON Swagger](http://localhost:3000/swagger-json)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "23157263-7f3fd2ba-2e59-491c-ab93-e93f007bf5aa"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "accounts",
+					"item": [
+						{
+							"name": "create",
+							"item": [
+								{
+									"name": "Accounts Controller create Account",
+									"id": "ce464743-6f5b-4674-8a61-dac1a3179b15",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\",\n  \"Email\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/accounts/create",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"accounts",
+												"create"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "70bac3ba-4bbb-464a-8cc4-63cbe97d9adb",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\",\n  \"Email\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/create",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"create"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": \"<boolean>\",\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "daf7e2e8-6c8c-4da4-8407-087fce3ee08e",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\",\n  \"Email\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/create",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"create"
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": null
+										},
+										{
+											"id": "e4024a41-f5be-4e94-860c-2aca8da4afa6",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\",\n  \"Email\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/create",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"create"
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "011580e2-c9e5-44dc-8eb9-240211e004c4",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\",\n  \"Email\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/create",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"create"
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "25cbfe60-2f5f-487f-85f9-257d54dc3b82",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\",\n  \"Email\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/create",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"create"
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										}
+									]
+								}
+							],
+							"id": "facd2f5c-7587-4e05-9afc-f81ea9b5311f"
+						},
+						{
+							"name": "activate",
+							"item": [
+								{
+									"name": "Accounts Controller activate Account",
+									"id": "110d04a9-a2e1-443e-b74d-2e9eb33053ad",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Email\": \"<string>\",\n  \"CodeConfirmation\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/accounts/activate",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"accounts",
+												"activate"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "6472dca7-8c5b-4339-ba4e-e77fcfb8cc09",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"Email\": \"<string>\",\n  \"CodeConfirmation\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/activate",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"activate"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": \"<boolean>\",\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "2bab035d-1142-4aa7-a967-11d49026d991",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"Email\": \"<string>\",\n  \"CodeConfirmation\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/activate",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"activate"
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "36eaf1b5-2713-48ad-a6cf-3aeff352360a",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"Email\": \"<string>\",\n  \"CodeConfirmation\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/activate",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"activate"
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "86af0ee6-4fe6-40a5-a0b0-9f9eb097bc36",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"Email\": \"<string>\",\n  \"CodeConfirmation\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/activate",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"activate"
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										}
+									]
+								}
+							],
+							"id": "fca6e18f-41b0-47b0-93b1-7d9096a92fa6"
+						},
+						{
+							"name": "login",
+							"item": [
+								{
+									"name": "Accounts Controller login Account",
+									"id": "d263135e-84de-42e9-b174-979cda6f1b1a",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/accounts/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"accounts",
+												"login"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "2a328b82-9eca-4882-9ce8-bdcc538de074",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"login"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": {},\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "3a14e288-0c42-47ec-8c3f-2c5081504ad7",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"login"
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": null
+										},
+										{
+											"id": "3704a0b9-83a3-4fb3-bd76-dc5eabd3f04f",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"login"
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "83fdde83-fb60-4026-a9ed-4011d7ccb379",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"login"
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "a46dfde5-d3e7-48ea-a213-a48645b32064",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"UserName\": \"<string>\",\n  \"Password\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/accounts/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"accounts",
+														"login"
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										}
+									]
+								}
+							],
+							"id": "05b49b76-7c20-452e-9f54-0986ff219423"
+						}
+					],
+					"id": "8a9fc80a-c5fc-4e0e-bba5-62585f97939b"
+				},
+				{
+					"name": "companies",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Companies Controller get Company",
+									"id": "2f46dfd3-16f6-433b-bae2-6808d57e099e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "29775077-499B-481C-A1CE-6A4C3AFE4A11",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "58df5477-3d39-4c5b-9db0-7e4fe3a5c457",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "29775077-499B-481C-A1CE-6A4C3AFE4A11",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": {},\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "0940c8be-c2e2-4cd2-86fa-8120c6d05d62",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "29775077-499B-481C-A1CE-6A4C3AFE4A11",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "240460f7-a155-4a18-8e16-c2cb2ed34d31",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "29775077-499B-481C-A1CE-6A4C3AFE4A11",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "90b4e670-8151-4402-a84a-0c1431058b6f",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "29775077-499B-481C-A1CE-6A4C3AFE4A11",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										}
+									]
+								},
+								{
+									"name": "Companies Controller update Company",
+									"id": "2648e626-d329-432d-92cf-004c9dfbe0c5",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ShortName\": \"Facebook6\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "A97D9C3C-2F60-4779-BAE3-EBB89A206D17",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "ecdcb9e9-5ad5-4e28-9da3-86f722e08585",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"ShortName\": \"Facebook6\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "A97D9C3C-2F60-4779-BAE3-EBB89A206D17",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": {},\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "a3b5ec2e-76c4-4f0e-9004-95a15fff3785",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"ShortName\": \"Facebook6\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "A97D9C3C-2F60-4779-BAE3-EBB89A206D17",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "d6443fcf-3005-4df4-a82c-f052ce3fcfc5",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"ShortName\": \"Facebook6\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "A97D9C3C-2F60-4779-BAE3-EBB89A206D17",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "b2ec239f-35cc-49da-977a-6306b5ff03b3",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"ShortName\": \"Facebook6\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "A97D9C3C-2F60-4779-BAE3-EBB89A206D17",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										}
+									]
+								},
+								{
+									"name": "Companies Controller delete Company",
+									"id": "2b94a975-8890-4b05-964e-c48fb2a1c6c3",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "cc4556c8-b26d-4b34-8d32-62c29f9e5e12",
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "38b6e395-225c-4d1f-9b37-ac6e5e7e0d93",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "cc4556c8-b26d-4b34-8d32-62c29f9e5e12",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": \"<boolean>\",\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "573d9841-8911-46e8-b92a-fb98b927436e",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "cc4556c8-b26d-4b34-8d32-62c29f9e5e12",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "6f0a451e-c04b-4f14-87b1-81fe88e9f798",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "cc4556c8-b26d-4b34-8d32-62c29f9e5e12",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "77ff441e-58a0-4618-8b2d-2548a53dd18b",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "cc4556c8-b26d-4b34-8d32-62c29f9e5e12",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										}
+									]
+								}
+							],
+							"id": "44bc3aba-7ef3-461a-ba28-80078ae8970c"
+						},
+						{
+							"name": "Companies Controller get Companies",
+							"id": "73610ea0-d07c-43d8-b1df-9c5abf45481e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{bearerToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/companies",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"companies"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "344e00aa-0614-4a16-b22c-e8cb79219ce5",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"<Error: Could not resolve allOf schema\"\n}"
+								},
+								{
+									"id": "85eb8bc1-634e-47b1-9601-0ef45d8af94a",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "3023ad66-b3b2-4253-b9c3-7a201a5bfe5c",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "3cee412a-84e3-47be-a117-3bcaee13bd33",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								}
+							]
+						},
+						{
+							"name": "Companies Controller create Company",
+							"id": "349c7046-c6fd-4358-8167-1c1c50ced43b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{bearerToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"ShortName\": \"Facebook3\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"CreationDate\": \"2024-04-12T05:00:07.551Z\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/companies",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"companies"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "f0b973a0-2134-4973-bbe4-8a3e6c70e466",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ShortName\": \"Facebook3\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"CreationDate\": \"2024-04-12T05:00:07.551Z\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": {},\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "938876aa-0961-4cb9-b67c-ab3afb4b0f7e",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ShortName\": \"Facebook3\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"CreationDate\": \"2024-04-12T05:00:07.551Z\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": null
+								},
+								{
+									"id": "f7f31e5f-3e55-4584-996a-46363af6c4e4",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ShortName\": \"Facebook3\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"CreationDate\": \"2024-04-12T05:00:07.551Z\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "01d937f7-c942-4205-91d5-26ee30f20269",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ShortName\": \"Facebook3\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"CreationDate\": \"2024-04-12T05:00:07.551Z\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "3f69db28-2569-43d0-ab11-8c1003d47955",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"ShortName\": \"Facebook3\",\n    \"FullName\": \"Facebook SAC\",\n    \"Description\": \"Red social\",\n    \"Email\": \"facebook@gmail.com\",\n    \"Page\": \"www.facebook.com\",\n    \"CreationDate\": \"2024-04-12T05:00:07.551Z\",\n    \"IsActive\": true,\n    \"FkUserId\": \"268CF1C6-7D6E-4813-88C1-5CF4C5DCE15B\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"companies"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "ed1e5d7b-5927-4e7e-af95-84020542d40f"
+				},
+				{
+					"name": "modules",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Modules Controller get Company",
+									"id": "57de306f-edc1-4131-a166-3a92e940bcd0",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "002020a7-c52c-4bb4-bb7d-1c9d91ad1cde",
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "003abf23-0188-48e1-a675-cbce6819ed2c",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "002020a7-c52c-4bb4-bb7d-1c9d91ad1cde",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": {},\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "bf1164c7-b0aa-4c37-b857-821f67f7e0aa",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "002020a7-c52c-4bb4-bb7d-1c9d91ad1cde",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "40680a71-be52-4881-8bee-0969b951548c",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "002020a7-c52c-4bb4-bb7d-1c9d91ad1cde",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "59d44ff4-1185-478e-8aa4-e889c72a4d39",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "002020a7-c52c-4bb4-bb7d-1c9d91ad1cde",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										}
+									]
+								},
+								{
+									"name": "Modules Controller update Company",
+									"id": "cf7950a3-4b46-4636-83fe-0a356ec47fcb",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Name\": \"<string>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "0d11c362-699b-4fbf-9021-6eb1e87db1fc",
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "0a7b1223-7e6d-43c4-814d-87d74d2dd173",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"Name\": \"<string>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "0d11c362-699b-4fbf-9021-6eb1e87db1fc",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": {},\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "6c683340-fc62-450c-8549-436262971cce",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"Name\": \"<string>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "0d11c362-699b-4fbf-9021-6eb1e87db1fc",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "55709e58-866e-4f2f-b40c-7f49bd61b264",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"Name\": \"<string>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "0d11c362-699b-4fbf-9021-6eb1e87db1fc",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "1485ade6-64c3-47cb-b47e-4915dc78f175",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"Name\": \"<string>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "0d11c362-699b-4fbf-9021-6eb1e87db1fc",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										}
+									]
+								},
+								{
+									"name": "Modules Controller delete Company",
+									"id": "d15166c6-310c-4d6c-a20d-bf3568da60b0",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "c39d3f2a-7e7f-4ed9-8a79-7bc57eaf71e5",
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "7b675354-0a4b-44f9-80aa-01102c89bff3",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "c39d3f2a-7e7f-4ed9-8a79-7bc57eaf71e5",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": \"<boolean>\",\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "2eff70c3-c9fd-4cf4-9615-8ff461cd0235",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "c39d3f2a-7e7f-4ed9-8a79-7bc57eaf71e5",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "19152508-b53c-4b5b-af4a-c046eb917205",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "c39d3f2a-7e7f-4ed9-8a79-7bc57eaf71e5",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										},
+										{
+											"id": "c6f7fd65-6b82-488e-9a64-ff883397d96b",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{bearerToken}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/v1/modules/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"v1",
+														"modules",
+														":id"
+													],
+													"variable": [
+														{
+															"id": "c39d3f2a-7e7f-4ed9-8a79-7bc57eaf71e5",
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+										}
+									]
+								}
+							],
+							"id": "59563648-edda-4371-bf4f-68cdd80a90ec"
+						},
+						{
+							"name": "Modules Controller get Companies",
+							"id": "a90238da-9f5f-4613-9d0d-778d8df04319",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{bearerToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/modules",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"modules"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "0c597517-0171-4c6b-91a6-7fce806e79ba",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"<Error: Could not resolve allOf schema\"\n}"
+								},
+								{
+									"id": "9a8fd797-c6cb-43b5-a80c-e5d6287742f7",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "42ff5303-ba7c-4d3a-b033-b740209701e8",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "af1aacb8-d4df-4859-859d-1ed77c4c264b",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								}
+							]
+						},
+						{
+							"name": "Modules Controller create Company",
+							"id": "7d457103-4278-4725-8d26-8f9ca84fef3e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{bearerToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Name\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/modules",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"modules"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "2d2b8533-241a-456a-9020-c6a9ed1a424a",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Name\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": {},\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "4b87336d-3c5e-4485-9338-381740a450fc",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Name\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": null
+								},
+								{
+									"id": "e1ef3212-6867-4f51-95ea-8488c01ed037",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Name\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "d5a22b35-dc29-47f7-ba89-9352dfa219c4",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Name\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "4b75c164-cc6e-4db8-860f-a3ada6062aef",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Name\": \"<string>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkCompanyId\": \"<string>\",\n  \"FkUserId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/modules",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"modules"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "dab850d8-f275-4d8a-894d-521410e13e6d"
+				},
+				{
+					"name": "privileges",
+					"item": [
+						{
+							"name": "Privileges Controller get Privileges",
+							"id": "f86d236a-bd8b-4a94-abfe-84396f99f22c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{bearerToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/privileges",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"privileges"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "ba24a161-721b-4854-b803-0453a5617852",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/privileges",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"privileges"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"<Error: Could not resolve allOf schema\"\n}"
+								},
+								{
+									"id": "bb47d9f2-06d3-4613-b483-6828ca2550c3",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/privileges",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"privileges"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "3658a378-026c-44b8-a1ba-b66bff5d516e",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/privileges",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"privileges"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "4a67dfaf-7ed6-4fc2-afbd-4a8b30932ac0",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v1/privileges",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"privileges"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "10005c28-dd07-41b0-8649-a66d44293c33"
+				},
+				{
+					"name": "tasks",
+					"item": [
+						{
+							"name": "Tasks Controller create Task",
+							"id": "c40d67df-aad0-4547-a347-4f1172f139af",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{bearerToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"ShortName\": \"<string>\",\n  \"InitialDate\": \"<dateTime>\",\n  \"AlertDate\": \"<dateTime>\",\n  \"FinalDate\": \"<dateTime>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkProjectId\": \"<string>\",\n  \"FkUserId\": \"<string>\",\n  \"FkCompanyId\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "f45ed237-726f-42a3-8e5a-c2e14a02c72f",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"ShortName\": \"<string>\",\n  \"InitialDate\": \"<dateTime>\",\n  \"AlertDate\": \"<dateTime>\",\n  \"FinalDate\": \"<dateTime>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkProjectId\": \"<string>\",\n  \"FkUserId\": \"<string>\",\n  \"FkCompanyId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/tasks",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"tasks"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": \"<number>\",\n  \"Data\": \"<boolean>\",\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "b887ca7f-5d6c-49df-a39e-e25668d77bdf",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"ShortName\": \"<string>\",\n  \"InitialDate\": \"<dateTime>\",\n  \"AlertDate\": \"<dateTime>\",\n  \"FinalDate\": \"<dateTime>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkProjectId\": \"<string>\",\n  \"FkUserId\": \"<string>\",\n  \"FkCompanyId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/tasks",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"tasks"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": null
+								},
+								{
+									"id": "7bc924d0-b8ca-4c5c-be6f-1ccc1175a4c8",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"ShortName\": \"<string>\",\n  \"InitialDate\": \"<dateTime>\",\n  \"AlertDate\": \"<dateTime>\",\n  \"FinalDate\": \"<dateTime>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkProjectId\": \"<string>\",\n  \"FkUserId\": \"<string>\",\n  \"FkCompanyId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/tasks",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"tasks"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 400,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "7211ac40-96f6-430b-9a6b-39acdf43c285",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"ShortName\": \"<string>\",\n  \"InitialDate\": \"<dateTime>\",\n  \"AlertDate\": \"<dateTime>\",\n  \"FinalDate\": \"<dateTime>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkProjectId\": \"<string>\",\n  \"FkUserId\": \"<string>\",\n  \"FkCompanyId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/tasks",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"tasks"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 401,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								},
+								{
+									"id": "f48447bf-e4b1-47a2-b837-e825701daa6c",
+									"name": "Untitled Example",
+									"originalRequest": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{bearerToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"ShortName\": \"<string>\",\n  \"InitialDate\": \"<dateTime>\",\n  \"AlertDate\": \"<dateTime>\",\n  \"FinalDate\": \"<dateTime>\",\n  \"CreationDate\": \"<dateTime>\",\n  \"IsActive\": \"<boolean>\",\n  \"FkProjectId\": \"<string>\",\n  \"FkUserId\": \"<string>\",\n  \"FkCompanyId\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/tasks",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"tasks"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"Code\": 500,\n  \"Data\": null,\n  \"Error\": {\n    \"IsValidate\": \"<boolean>\",\n    \"Message\": \"<string>\"\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "becca439-1331-446f-9ddb-4d7eb6bd7f62"
+				}
+			],
+			"id": "affa3d95-02f5-49f2-bcc2-673c2fd1f79c"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "32bf0aac-8b4a-4d26-959b-ba6d2fc18492",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "11edc0f8-b4f7-4e1b-99d1-9ac5e5f4f2a1",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "1b2d1188-ee44-4151-a1d4-994d9fcb735d",
+			"key": "baseUrl",
+			"value": "http://localhost:3000"
+		},
+		{
+			"id": "2f9bb0f4-a27e-4cab-850b-84bf5e26bda4",
+			"key": "bearerToken",
+			"value": "FFBE5B77-F31B-4509-ADE6-69EC83103CEC"
+		}
+	]
+}
