@@ -1,0 +1,2257 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/v1/accounts/create": {
+            "post": {
+                "operationId": "AccountsController_createAccount",
+                "parameters": [],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateAccountReqDto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number"
+                                        },
+                                        "Data": {
+                                            "type": "boolean"
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": ""
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Accounts"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/v1/accounts/activate": {
+            "put": {
+                "operationId": "AccountsController_activateAccount",
+                "parameters": [],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ActiveAccountReqDto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number"
+                                        },
+                                        "Data": {
+                                            "type": "boolean"
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Accounts"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/v1/accounts/login": {
+            "post": {
+                "operationId": "AccountsController_loginAccount",
+                "parameters": [],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/LoginAccountReqDto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "RespuestaDto",
+                                    "$ref": "#/components/schemas/ResponseResDto",
+                                    "properties": {
+                                        "Data": {
+                                            "$ref": "#/components/schemas/LoginAccountResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": ""
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Accounts"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/v1/companies": {
+            "get": {
+                "operationId": "CompaniesController_getCompanies",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "allOf": [
+                                        {
+                                            "$ref": "#/components/schemas/ResponseResDto"
+                                        },
+                                        {
+                                            "properties": {
+                                                "Data": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "$ref": "#/components/schemas/CompanyUserResDto"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "array",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "array",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "array",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Companies"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            },
+            "post": {
+                "operationId": "CompaniesController_createCompany",
+                "parameters": [],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateCompanyReqDto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "RespuestaDto",
+                                    "$ref": "#/components/schemas/ResponseResDto",
+                                    "properties": {
+                                        "Data": {
+                                            "$ref": "#/components/schemas/CompanyUserResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": ""
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Companies"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/v1/companies/{id}": {
+            "get": {
+                "operationId": "CompaniesController_getCompany",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "RespuestaDto",
+                                    "$ref": "#/components/schemas/ResponseResDto",
+                                    "properties": {
+                                        "Data": {
+                                            "$ref": "#/components/schemas/CompanyUserResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Companies"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            },
+            "put": {
+                "operationId": "CompaniesController_updateCompany",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateCompanyReqDto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "RespuestaDto",
+                                    "$ref": "#/components/schemas/ResponseResDto",
+                                    "properties": {
+                                        "Data": {
+                                            "$ref": "#/components/schemas/CompanyUserResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Companies"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            },
+            "delete": {
+                "operationId": "CompaniesController_deleteCompany",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number"
+                                        },
+                                        "Data": {
+                                            "type": "boolean"
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Companies"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/v1/modules": {
+            "get": {
+                "operationId": "ModulesController_getCompanies",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "allOf": [
+                                        {
+                                            "$ref": "#/components/schemas/ResponseResDto"
+                                        },
+                                        {
+                                            "properties": {
+                                                "Data": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "$ref": "#/components/schemas/ModuleResDto"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "array",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "array",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "array",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Modules"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            },
+            "post": {
+                "operationId": "ModulesController_createCompany",
+                "parameters": [],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateModuleReqDto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "RespuestaDto",
+                                    "$ref": "#/components/schemas/ResponseResDto",
+                                    "properties": {
+                                        "Data": {
+                                            "$ref": "#/components/schemas/ModuleResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": ""
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Modules"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/v1/modules/{id}": {
+            "get": {
+                "operationId": "ModulesController_getCompany",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "RespuestaDto",
+                                    "$ref": "#/components/schemas/ResponseResDto",
+                                    "properties": {
+                                        "Data": {
+                                            "$ref": "#/components/schemas/ModuleResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Modules"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            },
+            "put": {
+                "operationId": "ModulesController_updateCompany",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateModuleReqDto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "RespuestaDto",
+                                    "$ref": "#/components/schemas/ResponseResDto",
+                                    "properties": {
+                                        "Data": {
+                                            "$ref": "#/components/schemas/ModuleResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "object",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Modules"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            },
+            "delete": {
+                "operationId": "ModulesController_deleteCompany",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number"
+                                        },
+                                        "Data": {
+                                            "type": "boolean"
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Modules"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/v1/privileges": {
+            "get": {
+                "operationId": "PrivilegesController_getPrivileges",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "allOf": [
+                                        {
+                                            "$ref": "#/components/schemas/ResponseResDto"
+                                        },
+                                        {
+                                            "properties": {
+                                                "Data": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "$ref": "#/components/schemas/GetPrivilegesResDto"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "array",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "array",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "array",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Privileges"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        },
+        "/v1/tasks": {
+            "post": {
+                "operationId": "TasksController_createTask",
+                "parameters": [],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateTaskRequestDto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number"
+                                        },
+                                        "Data": {
+                                            "type": "boolean"
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": ""
+                    },
+                    "400": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 400
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 401
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "ResponseResDto",
+                                    "type": "object",
+                                    "properties": {
+                                        "Code": {
+                                            "type": "number",
+                                            "default": 500
+                                        },
+                                        "Data": {
+                                            "type": "boolean",
+                                            "default": null
+                                        },
+                                        "Error": {
+                                            "$ref": "#/components/schemas/ErrorResDto"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Tasks"
+                ],
+                "security": [
+                    {
+                        "bearer": []
+                    }
+                ]
+            }
+        }
+    },
+    "info": {
+        "title": "Api Vas",
+        "description": "API Rest para uso exclusivo del aplicativo Vas. <br />\n         <br />\n         Links: [JSON Swagger](http://localhost:3000/swagger-json)",
+        "version": "1.0",
+        "contact": {}
+    },
+    "tags": [],
+    "servers": [
+        {
+            "url": "http://localhost:3000/"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "bearer": {
+                "scheme": "bearer",
+                "bearerFormat": "JWT",
+                "type": "http"
+            }
+        },
+        "schemas": {
+            "ErrorResDto": {
+                "type": "object",
+                "properties": {
+                    "IsValidate": {
+                        "type": "boolean"
+                    },
+                    "Message": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "IsValidate",
+                    "Message"
+                ]
+            },
+            "ResponseResDto": {
+                "type": "object",
+                "properties": {
+                    "Code": {
+                        "type": "number"
+                    },
+                    "Data": {
+                        "type": "object"
+                    },
+                    "Error": {
+                        "$ref": "#/components/schemas/ErrorResDto"
+                    }
+                },
+                "required": [
+                    "Code",
+                    "Data",
+                    "Error"
+                ]
+            },
+            "CreateAccountReqDto": {
+                "type": "object",
+                "properties": {
+                    "UserName": {
+                        "type": "string"
+                    },
+                    "Password": {
+                        "type": "string"
+                    },
+                    "Email": {
+                        "type": "string"
+                    },
+                    "CreationDate": {
+                        "format": "date-time",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "UserName",
+                    "Password",
+                    "Email",
+                    "CreationDate"
+                ]
+            },
+            "ActiveAccountReqDto": {
+                "type": "object",
+                "properties": {
+                    "Email": {
+                        "type": "string"
+                    },
+                    "CodeConfirmation": {
+                        "type": "string"
+                    },
+                    "CreationDate": {
+                        "format": "date-time",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "Email",
+                    "CodeConfirmation",
+                    "CreationDate"
+                ]
+            },
+            "LoginAccountResDto": {
+                "type": "object",
+                "properties": {
+                    "UserId": {
+                        "type": "string"
+                    },
+                    "FirstName": {
+                        "type": "string"
+                    },
+                    "SecondName": {
+                        "type": "string"
+                    },
+                    "FirstLastName": {
+                        "type": "string"
+                    },
+                    "SecondLastName": {
+                        "type": "string"
+                    },
+                    "UserName": {
+                        "type": "string"
+                    },
+                    "Email": {
+                        "type": "string"
+                    },
+                    "Photo": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "UserId",
+                    "FirstName",
+                    "SecondName",
+                    "FirstLastName",
+                    "SecondLastName",
+                    "UserName",
+                    "Email",
+                    "Photo"
+                ]
+            },
+            "LoginAccountReqDto": {
+                "type": "object",
+                "properties": {
+                    "UserName": {
+                        "type": "string"
+                    },
+                    "Password": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "UserName",
+                    "Password"
+                ]
+            },
+            "UserResponseDto": {
+                "type": "object",
+                "properties": {
+                    "UserId": {
+                        "type": "string",
+                        "default": ""
+                    },
+                    "UserName": {
+                        "type": "string",
+                        "default": ""
+                    }
+                }
+            },
+            "CompanyUserResDto": {
+                "type": "object",
+                "properties": {
+                    "CompanyId": {
+                        "type": "string",
+                        "default": ""
+                    },
+                    "ShortName": {
+                        "type": "string",
+                        "default": ""
+                    },
+                    "FullName": {
+                        "type": "string",
+                        "default": ""
+                    },
+                    "Description": {
+                        "type": "string",
+                        "default": ""
+                    },
+                    "Email": {
+                        "type": "string",
+                        "default": ""
+                    },
+                    "Page": {
+                        "type": "string",
+                        "default": ""
+                    },
+                    "CreationDate": {
+                        "format": "date-time",
+                        "type": "string",
+                        "default": "2024-04-12T03:07:07.910Z"
+                    },
+                    "IsActive": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "FkUserId": {
+                        "type": "string",
+                        "default": ""
+                    },
+                    "DtoUser": {
+                        "default": {
+                            "UserId": "",
+                            "UserName": ""
+                        },
+                        "allOf": [
+                            {
+                                "$ref": "#/components/schemas/UserResponseDto"
+                            }
+                        ]
+                    }
+                }
+            },
+            "CreateCompanyReqDto": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "type": "string"
+                    },
+                    "FullName": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "Email": {
+                        "type": "string"
+                    },
+                    "Page": {
+                        "type": "string"
+                    },
+                    "CreationDate": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "IsActive": {
+                        "type": "boolean"
+                    },
+                    "FkUserId": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "ShortName",
+                    "FullName",
+                    "Description",
+                    "Email",
+                    "Page",
+                    "CreationDate",
+                    "IsActive",
+                    "FkUserId"
+                ]
+            },
+            "UpdateCompanyReqDto": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "type": "string"
+                    },
+                    "FullName": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "Email": {
+                        "type": "string"
+                    },
+                    "Page": {
+                        "type": "string"
+                    },
+                    "IsActive": {
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "ShortName",
+                    "FullName",
+                    "Description",
+                    "Email",
+                    "Page",
+                    "IsActive"
+                ]
+            },
+            "ObjCompanyResDto": {
+                "type": "object",
+                "properties": {
+                    "CompanyId": {
+                        "type": "string"
+                    },
+                    "Name": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "CompanyId",
+                    "Name"
+                ]
+            },
+            "ObjUserResDto": {
+                "type": "object",
+                "properties": {
+                    "UserId": {
+                        "type": "string"
+                    },
+                    "UserName": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "UserId",
+                    "UserName"
+                ]
+            },
+            "ModuleResDto": {
+                "type": "object",
+                "properties": {
+                    "ModuleId": {
+                        "type": "string"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "CreationDate": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "IsActive": {
+                        "type": "boolean"
+                    },
+                    "ObjCompany": {
+                        "$ref": "#/components/schemas/ObjCompanyResDto"
+                    },
+                    "ObjUser": {
+                        "$ref": "#/components/schemas/ObjUserResDto"
+                    }
+                },
+                "required": [
+                    "ModuleId",
+                    "Name",
+                    "CreationDate",
+                    "IsActive",
+                    "ObjCompany",
+                    "ObjUser"
+                ]
+            },
+            "CreateModuleReqDto": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string"
+                    },
+                    "CreationDate": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "IsActive": {
+                        "type": "boolean"
+                    },
+                    "FkCompanyId": {
+                        "type": "string"
+                    },
+                    "FkUserId": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "Name",
+                    "CreationDate",
+                    "IsActive",
+                    "FkCompanyId",
+                    "FkUserId"
+                ]
+            },
+            "UpdateModuleReqDto": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string"
+                    },
+                    "IsActive": {
+                        "type": "boolean"
+                    },
+                    "FkCompanyId": {
+                        "type": "string"
+                    },
+                    "FkUserId": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "Name",
+                    "IsActive",
+                    "FkCompanyId",
+                    "FkUserId"
+                ]
+            },
+            "GetPrivilegesResDto": {
+                "type": "object",
+                "properties": {
+                    "PrivilegeId": {
+                        "type": "string"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Abbreviation": {
+                        "type": "string"
+                    },
+                    "CreationDate": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "IsActive": {
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "PrivilegeId",
+                    "Name",
+                    "Abbreviation",
+                    "CreationDate",
+                    "IsActive"
+                ]
+            },
+            "CreateTaskRequestDto": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "type": "string",
+                        "example": "Comprar juguetes",
+                        "description": "nombre corto de la tarea"
+                    },
+                    "InitialDate": {
+                        "format": "date-time",
+                        "type": "string",
+                        "example": "2024-04-13T03:07:06.463Z",
+                        "description": "fecha cuando empieza la tarea"
+                    },
+                    "AlertDate": {
+                        "format": "date-time",
+                        "type": "string",
+                        "example": "2024-04-14T03:07:06.463Z",
+                        "description": "fecha cuando esperas que te alerte"
+                    },
+                    "FinalDate": {
+                        "format": "date-time",
+                        "type": "string",
+                        "example": "2024-04-15T03:07:06.463Z",
+                        "description": "fecha cuando finaliza la tarea"
+                    },
+                    "CreationDate": {
+                        "format": "date-time",
+                        "type": "string",
+                        "example": "2024-04-12T03:07:06.463Z",
+                        "description": "fecha de creacion de la tarea"
+                    },
+                    "IsActive": {
+                        "type": "boolean",
+                        "example": true,
+                        "description": "esta activa la tarea?"
+                    },
+                    "FkProjectId": {
+                        "type": "string",
+                        "example": "XXXX-XXXX-XXXX-XXXX",
+                        "description": "ID del proyecto donde se crea la tarea"
+                    },
+                    "FkUserId": {
+                        "type": "string",
+                        "example": "XXXX-XXXX-XXXX-XXXX",
+                        "description": "ID del usuario que crea la tarea"
+                    },
+                    "FkCompanyId": {
+                        "type": "string",
+                        "example": "XXXX-XXXX-XXXX-XXXX",
+                        "description": "ID de la compañia donde se crea la tarea"
+                    }
+                },
+                "required": [
+                    "ShortName",
+                    "InitialDate",
+                    "AlertDate",
+                    "FinalDate",
+                    "CreationDate",
+                    "IsActive",
+                    "FkProjectId",
+                    "FkUserId",
+                    "FkCompanyId"
+                ]
+            }
+        }
+    }
+}
